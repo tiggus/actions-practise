@@ -31,3 +31,13 @@ jobs:
         registry: ${{ env.REGISTRY }}
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Docker Publish
+      uses: manusa/actions-publish-docker@v1.1.2
+      with:
+        name: syimage123 
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        registry: ${{ env.REGISTRY }}
+        dockerfile path: sample-packages/docker/Dockerfile
+    
