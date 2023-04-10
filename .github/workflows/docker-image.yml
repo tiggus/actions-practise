@@ -39,5 +39,4 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: ${{ env.REGISTRY }}
-        dockerfile path: sample-packages/docker/Dockerfile
     
